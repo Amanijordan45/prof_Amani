@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amani Jordan | Profile</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="profile-container">
+        <!-- Profile photo -->
+        <img src="https://media.licdn.com/dms/image/v2/D4D03AQGYoraVXJpKxw/profile-displayphoto-scale_400_400/B4DZwdjs.KIgAg-/0/1770022453913?e=1772064000&v=beta&t=ywSjOa4K-H3c8YSII0FwU4EZFJ-4_qkvCZovuqACOtQ" alt="Alain Buhashe" class="profile-photo">
+
+        <!-- Name -->
+        <h1 class="name">Amani Jordan</h1>
+
+        <!-- Social media icons -->
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/amani-jordan-b92b26360/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Amanijordan45" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+
+        <!-- Button -->
+        <button id="greetBtn">Click Me</button>
+        <p id="greetText"></p>
+    </div>
+
+    <!-- Link to JS -->
+    <script>
+        // Button interaction
+document.getElementById('greetBtn').addEventListener('click', function() {
+    document.getElementById('greetText').innerText = "Hello! Welcome to my profile!";
+});
+
+    </script>
+</body>
+</html>

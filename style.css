@@ -1,0 +1,113 @@
+/* Reset default margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+}
+
+.profile-container {
+    text-align: center;
+    background: rgba(0,0,0,0.4);
+    padding: 50px 30px 30px 30px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    max-width: 400px;
+    width: 90%;
+    transition: transform 0.3s;
+}
+
+.profile-container:hover {
+    transform: translateY(-5px);
+}
+
+/* Profile photo */
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ffdd57;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.profile-photo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+}
+
+/* Name */
+.name {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Social icons */
+.social-icons a {
+    color: white;
+    font-size: 2em;
+    margin: 0 15px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ffdd57;
+    transform: scale(1.2);
+}
+
+/* Button */
+#greetBtn {
+    margin-top: 30px;
+    padding: 12px 25px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    background-color: #ffdd57;
+    color: #333;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#greetBtn:hover {
+    background-color: #ffc107;
+    transform: scale(1.05);
+}
+
+#greetText {
+    margin-top: 15px;
+    font-size: 1.1em;
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .profile-container {
+        padding: 40px 20px 20px 20px;
+    }
+
+    .social-icons a {
+        font-size: 1.8em;
+        margin: 0 10px;
+    }
+
+    .name {
+        font-size: 1.8em;
+    }
+
+    .profile-photo {
+        width: 130px;
+        height: 130px;
+    }
+}
